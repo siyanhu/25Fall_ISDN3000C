@@ -11,7 +11,7 @@ Visual Studio Code (VS Code) is a free, lightweight, and powerful source code ed
 
 ### **Python Package Download Sources**
 
-The safest and most reliable place to get Python is from the official website: [python.org](https://www.python.org/downloads/) or pick one from its [ftp index](https://www.python.org/ftp/python/). The website will automatically detect your operating system and suggest the best installer for you. But it's also up to you to choose any version based on your own requirements. For AIML projects recently, people use more often Python 3.10 or Python 3.11.
+The safest and most reliable place to get Python is from the official website: [python.org](https://www.python.org/downloads/) or pick one from its [ftp index](https://www.python.org/ftp/python/). The website will automatically detect your operating system and suggest the best installer for you. But it's also up to you to choose any version based on your own requirements. For AIML projects recently, origin/stylevpeople use more often Python 3.10 or Python 3.11.
 
 Taking Python 3.11.11 as an example, we download the XZ compressed source tarball for Python 3.11.11 from [python.org](https://www.python.org/ftp/python/3.11.11/Python-3.11.11.tar.xz). We will use this version for the installation of Python 3.11 on Ubuntu and MacOS in the following steps. For windows, we strongly recommend to use an installer. 
 
@@ -20,7 +20,7 @@ For different operation systems, the installation steps vary. Please find the co
 
 #### **1. On Windows**
 
-**Attention❗️** Compiling Python from source on Windows is highly complex and not recommended for general use. It requires installing Visual Studio and the C++ build toolchain, and the process is significantly different from Unix-based systems. The standard and fully supported method is to choose one version with official precompiled installers from [python.org](https://www.python.org/downloads/release/python-3119/). If you are interested in compiling a specific python library from scratch, please check tutorial_v3_compilation.md.
+**Attention❗️** Compiling Python from source on Windows is highly complex and not recommended for general use. It requires installing Visual Studio and the C++ build toolchain, and the process is significantly different from Unix-based systems. The standard and fully supported method is to choose one version with official precompiled installers from [python.org](https://www.python.org/downloads/release/python-3119/). If you are interested in compiling a specific python library from scratch, please check tutorial_compilation.md.
 
 <ins>Step 1: Download and Install Python</ins>
 
@@ -57,7 +57,7 @@ deactivate
 
 #### **2. On macOS**
 
-**Attention❗️** Compiling Python from source on MacOS is not always the first choice for developers. The standard and fully supported method is to choose one version with official precompiled installers from [python.org](https://www.python.org/downloads/release/python-3119/), or directly install a specific version of python with Homebrew. If you are interested in compiling a specific python library from scratch, please check tutorial_v3_compilation.md.
+**Attention❗️** Compiling Python from source on MacOS is not always the first choice for developers. The standard and fully supported method is to choose one version with official precompiled installers from [python.org](https://www.python.org/downloads/release/python-3119/), or directly install a specific version of python with Homebrew. If you are interested in compiling a specific python library from scratch, please check tutorial_compilation.md.
 
 The process on macOS is similar to Ubuntu but uses Homebrew to install dependencies. You'll need Xcode's Command Line Tools first.
 
@@ -103,7 +103,7 @@ deactivate
 
 #### **3. On Ubuntu 24.04 LTS**:
 
-**Attention❗️** Compiling Python from source on Linux is not always the first choice for developers. The standard and fully supported method is to directly install a specific version of python with APT, the command-line tool for managing deb packages. If you are interested in compiling a specific python library from scratch, please check tutorial_v3_compilation.md.
+**Attention❗️** Compiling Python from source on Linux is not always the first choice for developers. The standard and fully supported method is to directly install a specific version of python with APT, the command-line tool for managing deb packages. If you are interested in compiling a specific python library from scratch, please check tutorial_compilation.md.
 
 <ins>Step 1: Install Python</ins>
 
@@ -458,7 +458,7 @@ Once you are happy with the work on your feature branch, you can merge it back i
     .venv/
     env/
     ```
-3. clone and do the tasks in tutorial_v3_task1.md.
+3. clone and do the tasks in tutorial_task1.md.
 4. Remember to add **requirements.txt** to let people know the libraries you installed to support the code.
 3. Remember to add instructions on how to use your code in a **readme.md** file, to let people know how to use the code.
 5. After you finish the tasks, commit your code and push the changes to Github.
@@ -563,7 +563,7 @@ Let's explore more unique capabilities of the platform.
 
 ### **Task II: The "Vibe Coding"**
 
-1. In the Github repository "ISDN3000C_Lab1" you created, clone and do the tasks in tutorial_v3_task2.md.
+1. In the Github repository "ISDN3000C_Lab1" you created, clone and do the tasks in tutorial_task2.md.
 2. Remember to add requirements.txt to let people know the libraries you installed to support the code.
 3. Remember to add instructions on how to use your code in a readme.md file, to let people know how to use the code.
 4. After you finish the tasks, commit your code and push the changes to Github.
