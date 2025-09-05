@@ -129,7 +129,7 @@ Your feature is done. Let's merge it into the `main` branch.
 
 2.  **Merge the Feature Branch:**
     ```bash
-    git merge feature/navigation
+    git merge origin/style
     ```
 
 3.  **Push the Updated `main` Branch:**
