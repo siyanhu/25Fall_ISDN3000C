@@ -159,7 +159,7 @@ If your project requires a specific version (e.g., for compatibility), specify i
 pip install requests==2.31.0
 ```
 
-You can find version numbers on the library's [PyPI page](pypi.org/project/requests) or in project documentation.
+You can find version numbers on the library's [PyPI page](https://pypi.org/project/pip/) or in project documentation.
 
 #### **Using a requirements.txt File**
 For reproducible environments, use a requirements.txt file to list all dependencies. This is especially useful for sharing projects via Git.
