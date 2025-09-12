@@ -179,7 +179,7 @@ You just automated a sequence of three commands! This is the foundation for the 
     *   Inside `ISDN3000C_Lab02`, create two more directories: `raw_data` and `final_report`.
 
 2.  **Get the Data:**
-    *   Write a shell script to copy&paste [assignment.log](Lab02/assignment.log) to your `raw_data` path, and rename it as `game.log`.
+    *   Write a shell script to copy&paste assignment.log to your `raw_data` path, and rename it as `game.log`.
 
 3.  **Create an Analysis Script:**
     Your main task is to create a script that automates the analysis. A script is just a text file with a list of commands.
@@ -194,19 +194,16 @@ You just automated a sequence of three commands! This is the foundation for the 
 
     c.  **Count Critical Errors:** Count the total number of lines in `game.log` that contain the word "WARN" and "CRITICAL" respectively. Append a new section to `analysis_report.md` that looks like this (the `XX` should be the number you found):
 
-        ```
         ## Summary
 
         - Total Warning: XX
         - Total Critical Errors: XX
-        ```
         
         *(Hint: You will need to use `echo` with `>>` for the text and a pipe (`|`) to count the lines and append that number with `>>`)*.
 
     d.  **Count Player Logins:** Count the total number of lines that contain "LOGIN SUCCESS". Append this count to the summary in `analysis_report.md` so it looks like this:
-        ```
+
         - Total Player Logins: YY
-        ```
 
 4.  **Run Your Script and Verify:**
     *   Navigate to your `ISDN3000C_Lab02` directory in the terminal.
