@@ -1,0 +1,56 @@
+[2025-09-08 10:00:15] [INFO] User 'jdoe' LOGIN SUCCESS from IP 192.168.1.10
+[2025-09-08 10:01:22] [INFO] User 'asmith' LOGIN SUCCESS from IP 10.0.0.52
+[2025-09-08 10:03:45] [WARN] User 'root' LOGIN FAILED from IP 203.0.113.15
+[2025-09-08 10:05:10] [INFO] Service 'cron' executed task 'cleanup_tmp'.
+[2025-09-08 10:05:30] [INFO] User 'jdoe' accessed resource '/api/v1/data'.
+[2025-09-08 10:06:00] [WARN] User 'admin' LOGIN FAILED from IP 198.51.100.2
+[2025-09-08 10:07:11] [INFO] User 'admin' LOGIN SUCCESS from IP 192.168.1.25
+[2025-09-08 10:08:25] [CRITICAL] User 'admin' PERMISSION DENIED on resource '/etc/shadow'.
+[2025-09-08 10:09:01] [INFO] User 'asmith' accessed resource '/api/v1/users'.
+[2025-09-08 10:10:00] [INFO] Service 'backup_agent' started.
+[2025-09-08 10:11:54] [WARN] User 'guest' LOGIN FAILED from IP 203.0.113.15
+[2025-09-08 10:12:30] [CRITICAL] User 'jdoe' PERMISSION DENIED on resource '/etc/passwd'.
+[2025-09-08 10:15:00] [INFO] Service 'backup_agent' completed successfully.
+[2025-09-08 10:16:00] [CRITICAL] DATA EXPORT initiated by user 'admin' to destination /mnt/backups/archive.zip.
+[2025-09-08 10:17:40] [CRITICAL] User 'admin' PERMISSION DENIED on resource '/etc/shadow'.
+[2025-09-08 10:00:15] [INFO] User 'jdoe' LOGIN SUCCESS from IP 192.168.1.10
+[2025-09-08 10:01:22] [INFO] User 'asmith' LOGIN SUCCESS from IP 10.0.0.52
+[2025-09-08 10:02:18] [INFO] Service 'firewall-update' executed task 'refresh_rules'.
+[2025-09-08 10:03:45] [WARN] User 'root' LOGIN FAILED from IP 203.0.113.15
+[2025-09-08 10:04:01] [INFO] User 'jdoe' accessed resource '/api/v1/status'.
+[2025-09-08 10:05:10] [INFO] Service 'cron' executed task 'cleanup_tmp'.
+[2025-09-08 10:05:30] [INFO] User 'jdoe' accessed resource '/api/v1/data'.
+[2025-09-08 10:06:00] [WARN] User 'admin' LOGIN FAILED from IP 198.51.100.2
+[2025-09-08 10:06:45] [WARN] User 'admin' LOGIN FAILED from IP 198.51.100.2
+[2025-09-08 10:07:11] [INFO] User 'admin' LOGIN SUCCESS from IP 192.168.1.25
+[2025-09-08 10:08:25] [CRITICAL] User 'admin' PERMISSION DENIED on resource '/etc/shadow'.
+[2025-09-08 10:09:01] [INFO] User 'asmith' accessed resource '/api/v1/users'.
+[2025-09-08 10:10:00] [INFO] Service 'backup_agent' started.
+[2025-09-08 10:11:54] [WARN] User 'guest' LOGIN FAILED from IP 203.0.113.15
+[2025-09-08 10:12:30] [CRITICAL] User 'jdoe' PERMISSION DENIED on resource '/etc/passwd'.
+[2025-09-08 10:13:00] [INFO] User 'mchen' LOGIN SUCCESS from IP 192.168.2.113
+[2025-09-08 10:13:22] [WARN] User 'root' LOGIN FAILED from IP 185.86.151.11
+[2025-09-08 10:13:50] [INFO] User 'mchen' accessed resource '/dashboard'.
+[2025-09-08 10:15:00] [INFO] Service 'backup_agent' completed successfully.
+[2025-09-08 10:15:05] [INFO] User 's.jones' LOGIN SUCCESS from IP 10.0.1.80
+[2025-09-08 10:16:00] [CRITICAL] DATA EXPORT initiated by user 'admin' to destination /mnt/backups/archive.zip.
+[2025-09-08 10:17:40] [CRITICAL] User 'admin' PERMISSION DENIED on resource '/etc/shadow'.
+[2025-09-08 10:18:01] [INFO] User 'jdoe' LOGOUT SUCCESS.
+[2025-09-08 10:18:33] [WARN] User 'ubnt' LOGIN FAILED from IP 203.0.113.15
+[2025-09-08 10:19:01] [WARN] User 'support' LOGIN FAILED from IP 203.0.113.15
+[2025-09-08 10:20:15] [INFO] User 'asmith' LOGOUT SUCCESS.
+[2025-09-08 10:21:00] [INFO] Service 'system-health' reported status OK.
+[2025-09-08 10:22:15] [INFO] User 'dev_user' LOGIN SUCCESS from IP 192.168.1.10
+[2025-09-08 10:23:55] [INFO] User 'dev_user' accessed resource '/api/v2/test_endpoint'.
+[2025-09-08 10:25:30] [CRITICAL] User 'dev_user' PERMISSION DENIED on resource '/var/www/html/config.php'.
+[2025-09-08 10:26:00] [WARN] User 'admin' LOGIN FAILED from IP 103.27.10.99
+[2025-09-08 10:30:00] [INFO] Service 'cron' executed task 'log_rotate'.
+[2025-09-08 10:31:00] [INFO] User 'admin' accessed resource '/admin/panel'.
+[2025-09-08 10:32:15] [CRITICAL] User 'asmith' PERMISSION DENIED on resource '/etc/shadow'.
+[2025-09-08 10:33:00] [INFO] User 's.jones' accessed resource '/reports/generate'.
+[2025-09-08 10:35:10] [INFO] User 'mchen' LOGOUT SUCCESS.
+[2025-09-08 10:36:15] [WARN] User 'postgres' LOGIN FAILED from IP 203.0.113.15
+[2025-09-08 10:40:00] [INFO] Service 'apache2' restart initiated by user 'admin'.
+[2025-09-08 10:40:05] [INFO] Service 'apache2' restart successful.
+[2025-09-08 10:42:20] [CRITICAL] User 'admin' PERMISSION DENIED on resource '/root/.ssh/authorized_keys'.
+[2025-09-08 10:45:00] [INFO] User 'dev_user' LOGOUT SUCCESS.
