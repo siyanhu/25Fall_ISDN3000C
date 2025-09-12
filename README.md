@@ -11,4 +11,12 @@
     ├── tutorial_compilation.md
     ├── ASCII-Artify.zip
     ```
-2. 
+
+2. [**Session 2: Introduction to the Linux Command Line**](Lab02)
+    ```
+    Lab02 /
+    ├── tutorial.md
+    ├── assignment.log
+    ```
+
+3. 
