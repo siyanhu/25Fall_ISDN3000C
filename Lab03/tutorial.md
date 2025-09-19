@@ -73,7 +73,7 @@ Now, we will establish a direct physical link to the RDK and then learn the two 
 
 1.  **Insert SD Card**: Make sure the flashed SD card is inserted into the slot on the bottom of the RDK board.
 2.  **Connect Network Hardware**:
-    *   Plug the **USB-C to Ethernet adapter** into the RDK's data USB-C port (the port that is **NOT** labeled "PWR").
+    *   Plug the Ethernet cable to your RDK.
     *   Connect one end of the **Ethernet cable** to the adapter.
     *   Connect the other end of the Ethernet cable directly to your laptop's Ethernet port (or via a USB adapter if your laptop lacks one).
 3.  **Power On**: Plug the power supply cable into the RDK's dedicated **power port (labeled 'PWR')**. The RDK will boot automatically. Wait about a minute for it to start up.
