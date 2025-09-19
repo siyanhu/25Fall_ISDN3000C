@@ -19,4 +19,9 @@
     ├── assignment.log
     ```
 
-3. 
+3. [**Session 3: RDK X5 Bootcamp**](Lab03)
+    ```
+    Lab03 /
+    ├── tutorial.md
+    ├── tutorial_nano.md
+    ```
