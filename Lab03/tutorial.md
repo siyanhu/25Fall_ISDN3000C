@@ -28,7 +28,7 @@ This section is the foundation for all subsequent operations. Please follow the 
     *   Ethernet Cable
 
 *   **Software (Please download on your personal laptop beforehand)**:
-    *   **Ubuntu RDK OS Desktop Version**: [rdk-x5-ubuntu22-preinstalled-desktop-3.3.1-arm64.img.xz](https://archive.d-robotics.cc/downloads/os_images/rdk_x5/rdk_os_3.3.1-2025-8-8/rdk-x5-ubuntu22-preinstalled-desktop-3.3.1-arm64.img.xz)
+    *   **Ubuntu RDK OS Desktop Version**: [Official Link](https://archive.d-robotics.cc/downloads/os_images/rdk_x5/rdk_os_3.3.1-2025-8-8/rdk-x5-ubuntu22-preinstalled-desktop-3.3.1-arm64.img.xz), [Google Drive Backup](https://drive.google.com/drive/folders/1PGY9-gBivsWrB6LC3koPOLh3KDOOvrHV?usp=share_link)
     *   **Flashing Tool**: Windows users download **Rufus** ([Official Website](https://rufus.ie/)); macOS users download **balenaEtcher** ([Official Website](https://www.balena.io/etcher/)).
     *   **VNC Client**: To ensure a consistent experience for everyone, we recommend using **RealVNC Viewer**, which is available for both Windows and macOS. Please download from the [official RealVNC website](https://www.realvnc.com/en/connect/download/viewer/).
 
