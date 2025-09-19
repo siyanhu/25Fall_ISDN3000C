@@ -93,7 +93,7 @@ Now, we will establish a direct physical link to the RDK and then learn the two 
 5.  Select the radio button for **Use the following IP address**.
 6.  Enter the following information exactly:
     *   **IP Address:** `192.168.127.12`
-    *   **Subnet Mask:** Leave it as default value, or change it to `255.255.255.0` 
+    *   **Subnet Mask:** change it to `255.255.255.0` 
     *   Leave the `Default gateway` and `DNS server` fields **empty**.
 7.  Click **OK**, and then **Close**.
 
@@ -107,7 +107,7 @@ Now, we will establish a direct physical link to the RDK and then learn the two 
 6.  Change `Configure IPv4` from `Using DHCP` to **Manually**.
 7.  Enter the following information exactly:
     *   **IP Address:** `192.168.127.12`
-    *   **Subnet Mask:** Leave it as default value, or change it to `255.255.255.0` 
+    *   **Subnet Mask:** change it to `255.255.255.0` 
     *   Leave the `Router` field **empty**.
 8.  Click **OK**.
 
