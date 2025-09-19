@@ -555,4 +555,6 @@ For this final submission, we will adopt a standard software engineering practic
     ```
 
 5.  **Submit:**
-    Submit the **URL of your forked GitHub repository** to the learning management system.
+    
+    *   Submit the **URL of your forked GitHub repository** to the learning management system.
+    *   **One submission per group**, and also list all members of your group together with the Github link (list **Full Name** and **Student Number**).
