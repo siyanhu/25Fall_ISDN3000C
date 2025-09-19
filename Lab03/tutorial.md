@@ -118,17 +118,7 @@ With the network bridge configured, you can now access the RDK. Its credentials 
 *   **Username**: `sunrise`
 *   **Password**: `sunrise`
 
-##### **Method 1: VNC (Graphical Control)**
-
-VNC gives you access to the RDK's full graphical desktop.
-
-1.  Open **RealVNC Viewer**.
-2.  In the address bar, type the RDK's IP address and press Enter: `192.168.127.10`
-3.  Accept any security warnings and enter the username `sunrise` and password `sunrise`.
-4.  You should now see the RDK's Ubuntu desktop.
-5.  **[Task] Connect the RDK to the Internet**: In the VNC desktop, click the network icon in the top-right corner, connect to the Wi-Fi network `ISDN3000C` with the password `12345678`.
-
-##### **Method 2: SSH (Command-Line Control)**
+##### **Method 1: SSH (Command-Line Control)**
 
 SSH gives you a powerful and efficient text-based terminal on the RDK. Do this operation on your laptop's **Visual Studio Code Terminal**.
 
@@ -137,6 +127,21 @@ SSH gives you a powerful and efficient text-based terminal on the RDK. Do this o
 3.  The first time you connect, type `yes` and press Enter.
 4.  When prompted, type the password `sunrise` and press Enter.
 5.  Your command prompt will change, indicating you are now issuing commands directly on the RDK. To leave, type `exit`.
+
+##### **Method 2: VNC (Graphical Control)**
+
+VNC gives you access to the RDK's full graphical desktop. Before doing following steps, please **use SSH method to enable x11vnc access first:**
+
+1. Execute the command: `ssh sunrise@192.168.127.10` and log into your RDK
+2. Execute command `x11vnc -forever -usepw`, and set up password as `sunrise`.
+3. Choose `yes` for every following questions.
+4.  Open **RealVNC Viewer** on your laptop.
+5.  In the address bar, type the RDK's IP address and press Enter: `192.168.127.10`
+6.  Accept any security warnings and enter the username `sunrise` and password `sunrise`.
+7.  You should now see the RDK's Ubuntu desktop.
+8.  **[Task] Connect the RDK to the Internet**: In the VNC desktop, click the network icon in the top-right corner, connect to the Wi-Fi network `ISDN3000C` with the password `12345678`.
+
+
 
 #### **2.4 SCP (Secure File Copy)**
 
