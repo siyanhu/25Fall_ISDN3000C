@@ -130,7 +130,7 @@ VNC gives you access to the RDK's full graphical desktop.
 
 ##### **Method 2: SSH (Command-Line Control)**
 
-SSH gives you a powerful and efficient text-based terminal on the RDK.
+SSH gives you a powerful and efficient text-based terminal on the RDK. Do this operation on your laptop's **Visual Studio Code Terminal**.
 
 1.  Open your computer's Terminal (**Terminal** on macOS, **PowerShell** on Windows).
 2.  Execute the command: `ssh sunrise@192.168.127.10`
