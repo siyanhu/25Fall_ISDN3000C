@@ -255,6 +255,10 @@ This chapter will introduce some more advanced network diagnostic tools to help 
 
 ### 4.1 Route Tracing and Path Analysis (traceroute)
 
+'''bash
+sudo apt-get install traceroute
+'''
+
 The `traceroute` command displays the routing path packets take from RDK-X5 to a target host.
 
 **Task 4.1.1: Use the `traceroute` Command**
