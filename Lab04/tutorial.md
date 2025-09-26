@@ -274,6 +274,11 @@ The `traceroute` command displays the routing path packets take from RDK-X5 to a
     The server will respond with the raw HTTP headers and HTML of the webpage. This is what your browser does behind the scenes.
 
 **Task 4.2.3: Use `netcat` for Port Listening and Data Transfer**
+Please install "netcat" using the following scommand:
+```bash
+sudo apt install -y netcat
+```
+
 1.  **Listen on a port as a server:** Run on RDK-X5:
     ```bash
     nc -lvp 12345
