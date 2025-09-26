@@ -164,33 +164,6 @@ This section will guide you on how to modify the IP address of RDK-X5's Ethernet
 2.  **Verify IP Address:** Use the `ip addr show eth0` command again to confirm that the IP address has been successfully changed back to the original IP address.
 3.  **Test Connectivity:** Try to `ping` the original `eth0` IP address from your laptop, or `ping` your laptop from RDK-X5, to verify connectivity.
 
-### 2.3 Configure RDK-X5 as a Ethernet DHCP Client
-
-This section will guide you on how to configure RDK-X5's Ethernet interface to automatically obtain an IP address via DHCP.
-
-**Warning:** **Be sure to perform this operation ONLY AFTER connecting to RDK-X5 via Wi-Fi SSH!**
-
-**Task 2.3.1: Configure Ethernet Interface (eth0) to Obtain DHCP Address**
-1.  **Edit Network Configuration File:** Ubuntu 22.04 typically uses Netplan for network configuration. You need to edit the YAML configuration file in the `/etc/netplan/` directory (e.g., `01-netcfg.yaml` or a similar name).
-    ```bash
-    sudo nano /etc/netplan/01-netcfg.yaml
-    ```
-    Modify the `eth0` configuration to DHCP mode, as shown in the example:
-    ```yaml
-    network:
-      version: 2
-      renderer: networkd
-      ethernets:
-        eth0:
-          dhcp4: true
-          # dhcp6: true # If IPv6 DHCP is needed
-    ```
-2.  **Apply Network Configuration:**
-    ```bash
-    sudo netplan apply
-    ```
-3.  **Verify IP Address:** Use the `ip addr show eth0` command to confirm that `eth0` has successfully obtained an IP address from the DHCP server.
-
 ---
 
 ## Chapter 3: RDK-X5 Network Services and Application Practice
