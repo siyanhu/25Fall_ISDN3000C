@@ -1,4 +1,4 @@
-# Lab05: RDK-X5 Network Fundamentals and Configuration Practice
+# Lab04: RDK-X5 Network Fundamentals and Configuration Practice
 
 **Learning Objectives:**
 *   Master basic network environment configuration and diagnosis for RDK-X5.
