@@ -439,7 +439,7 @@ The client can then parse it back into a dictionary:
 
 ### Part 5: Submission
 
-You are required to submit the following to your forked Github repo:
+One submission per each group. Submit your forked github repo link, full names and student number of all group memebers. You are required to submit the following to your forked Github repo:
 
 1.  **Your completed `gateway_server.py` file.**
 2.  **Your completed `monitoring_client.py` file.**
