@@ -249,64 +249,6 @@ Python's `socket` module provides a simple way to create network applications.
     ```
 3.  **Verify Data Transfer:** Observe the output of the server and client to confirm that data was successfully sent and received.
 
-### 3.2 Configure RDK-X5 as a DHCP Server
-
-This section will configure RDK-X5 as a DHCP server, allowing it to assign IP addresses to devices connected to its Ethernet interface.
-
-**Warning:** **When configuring a DHCP server, ensure you are connected to RDK-X5 via Wi-Fi SSH. An improperly configured DHCP server can interfere with your local network!**
-
-**Task 3.2.1: Install `isc-dhcp-server`**
-1.  Install the DHCP server package on RDK-X5:
-    ```bash
-    sudo apt update
-    sudo apt install isc-dhcp-server
-    ```
-
-**Task 3.2.2: Configure DHCP Server**
-1.  **Specify Listening Interface:** Edit the `/etc/default/isc-dhcp-server` file to specify the interface the DHCP server should listen on (e.g., `eth0`):
-    ```bash
-    sudo nano /etc/default/isc-dhcp-server
-    ```
-    Find `INTERFACESv4=""` or `INTERFACES=""` and change it to:
-    ```
-    INTERFACESv4="eth0"
-    ```
-2.  **Edit DHCP Configuration File:** Edit the `/etc/dhcp/dhcpd.conf` file to define the IP address pool, subnet mask, DNS servers, etc.
-    ```bash
-    sudo nano /etc/dhcp/dhcpd.conf
-    ```
-    Add or modify the following content (adjust parameters according to your network plan):
-    ```
-    # Disable authoritative mode for the DHCP server unless you are sure it's the only DHCP server on the network
-    # authoritative;
-
-    subnet 192.168.1.0 netmask 255.255.255.0 {
-      range 192.168.1.100 192.168.1.200; # IP address pool
-      option routers 192.168.1.1;       # Default gateway (RDK-X5 itself or your specified router)
-      option domain-name-servers 8.8.8.8, 8.8.4.4; # DNS servers
-      option domain-name "rdk-lab.local";
-      default-lease-time 600;
-      max-lease-time 7200;
-    }
-    ```
-    **Note:** Ensure that the static IP address you configure for `eth0` (e.g., `192.168.1.1`) is within the same subnet as this DHCP range and is used as `option routers`.
-
-**Task 3.2.3: Start and Verify DHCP Service**
-1.  **Start DHCP Service:**
-    ```bash
-    sudo systemctl restart isc-dhcp-server
-    sudo systemctl status isc-dhcp-server
-    ```
-    Check the service status to ensure it is running without errors.
-2.  **Connect Client:** Connect your laptop's (or any other device's) Ethernet interface to RDK-X5's `eth0` interface.
-3.  **Verify IP Acquisition:** On your laptop, configure the Ethernet interface to automatically obtain an IP address (DHCP client mode), then check if it successfully obtained an IP address from RDK-X5.
-
-#### **Question:** A challenge to enhance the code: "Modify the Python client to take a message from user input and send that to the server. Modify the server to echo back the exact same message it received."
-
-#### **Question:** An implied question after the client machine gets an IP from the RDK server: "What is your IP address now?"
-
----
-
 ## Chapter 4: Network Diagnostics and Advanced Tools
 
 This chapter will introduce some more advanced network diagnostic tools to help you analyze network traffic and connection status in depth.
