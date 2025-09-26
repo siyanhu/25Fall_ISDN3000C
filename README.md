@@ -25,3 +25,9 @@
     ├── tutorial.md
     ├── tutorial_nano.md
     ```
+
+4. [**Session 3: RDK-X5 Network Fundamentals and Configuration Practice**](Lab04)
+    ```
+    Lab04 /
+    ├── tutorial.md
+    ```
