@@ -65,6 +65,12 @@ RDK-X5 typically includes an Ethernet interface (`eth0`) and a wireless interfac
 
 ### 1.3 Basic Network Connectivity Test
 
+Install dns library:
+
+```bash
+sudo apt install dnsutils
+```
+
 `ping` and `dig` are the most commonly used network diagnostic tools for testing host connectivity and DNS resolution.
 
 **Task 1.3.1: Test Network Connectivity (ping)**
