@@ -387,7 +387,7 @@ The `traceroute` command displays the routing path packets take from RDK-X5 to a
 
 ---
 
-## Assignment - Building a Simple IoT Gateway
+## Group Assignment - Building a Simple IoT Gateway
 
 You will build a simple but functional IoT Gateway that collects system information from the RDK-X5 and reports it to an application running on your laptop. A monitoring system is created for remote IoT device RDK-X5. A central station (your laptop) needs to automatically collect key metrics from remote device every minute to ensure they are running correctly. Your RDK-X5 is the "IoT device" that runs a server to provide this data upon request.
 
