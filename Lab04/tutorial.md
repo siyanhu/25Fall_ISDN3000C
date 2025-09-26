@@ -404,7 +404,7 @@ You will build a simple but functional IoT Gateway that collects system informat
 
 ### Part 2: The Gateway Server (on RDK-X5)
 
-The python script [gateway_server.py](submission/gateway_server.py) is a boilerplate for a multi-threaded server. This design allows the server to handle multiple clients simultaneously, which is a standard practice for robust network services.
+The python script [gateway_server.py](https://github.com/siyanhu/ISDN3000C_Lab04_template/blob/master/gateway_server.py) is a boilerplate for a multi-threaded server. This design allows the server to handle multiple clients simultaneously, which is a standard practice for robust network services.
 
 Your task is to **complete the `handle_client` function**.
 
