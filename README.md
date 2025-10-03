@@ -31,3 +31,9 @@
     Lab04 /
     ├── tutorial.md
     ```
+    
+5. [**Session 5: Smart Garden Sensor Analysis**](Lab05)
+    ```
+    Lab05 /
+    ├── tutorial.md
+    ```
