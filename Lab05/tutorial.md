@@ -193,7 +193,7 @@ It is now time to visualise the sensor data to see trends and detect anomalies.
 3.  On the right subplot (`axes[1]`): Create a scatter plot comparing `temperature_c` (x-axis) with `soil_moisture` (y-axis). Give it a title: `Temperature vs. Soil Moisture`. Use `alpha=0.1` to make the density of points visible.
 4.  **Question 8:** What does the histogram tell you about the temperature environment? Based on the scatter plot, what is the general relationship between temperature and soil moisture? Do you see any unusual patterns or clusters?
 
-## Final Challenge (`final_challenge.py`)
+## Final Challenge
 
 **Objective:** Use your analysis skills to identify a faulty sensor.
 
