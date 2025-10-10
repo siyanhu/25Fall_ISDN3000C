@@ -215,39 +215,36 @@ Create a file named `button_led.py`.
 import Hobot.GPIO as GPIO
 import time
 
-# Pin definitions
-led_pin = 31
-button_pin = 13
+LED_PIN = 31      
+BUTTON_PIN = 13 
 
-def main():
-    GPIO.setmode(GPIO.BOARD)
+GPIO.setmode(GPIO.BOARD)
 
-    # Setup pins
-    GPIO.setup(led_pin, GPIO.OUT)
-    GPIO.setup(button_pin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+GPIO.setup(LED_PIN, GPIO.OUT)
 
-    print("Press the button to turn on the LED. (Ctrl+C to exit)")
+GPIO.setup(BUTTON_PIN, GPIO.IN)
 
-    # Set initial LED state to OFF
-    GPIO.output(led_pin, GPIO.LOW)
+print("start")
 
-    try:
-        while True:
-            if GPIO.input(button_pin) == GPIO.HIGH:
-                # Turn LED ON when button is pressed
-                GPIO.output(led_pin, GPIO.HIGH)
-            else:
-                # Turn LED OFF when button is not pressed
-                GPIO.output(led_pin, GPIO.LOW)
-            
-            time.sleep(0.02) # Small delay
+try:
+    while True:
+        button_state = GPIO.input(BUTTON_PIN)
 
-    finally:
-        print("\nCleaning up GPIO...")
-        GPIO.cleanup()
+        if button_state == GPIO.HIGH:
+            GPIO.output(LED_PIN, GPIO.HIGH)
+        else:
+            GPIO.output(LED_PIN, GPIO.LOW)
+        
+        time.sleep(0.02)
 
-if __name__ == '__main__':
-    main()
+except KeyboardInterrupt:
+    print("broken")
+
+finally:
+    print("Clena...")
+    GPIO.output(LED_PIN, GPIO.LOW) 
+    GPIO.cleanup()
+    print("End")
 ```
 
 ### 3. Run the Code
