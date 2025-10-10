@@ -160,37 +160,40 @@ For reference, please check [button.png](./media/button.png)
 Create a new file named `button_read.py` and enter the following code:
 
 ```python
+# 导入必要的库
 import Hobot.GPIO as GPIO
 import time
 
-# Pin Definitions
-button_pin = 13  # BOARD pin 13
+# --- 引脚定义 ---
+# 我们使用物理引脚编号，所以这里的数字就是我们实际连接的引脚号。
+LED_PIN = 31
 
-def main():
-    GPIO.setmode(GPIO.BOARD)
+# --- GPIO 初始化 ---
+# 设置引脚编号模式为 BOARD 模式，即使用物理引脚号。
+GPIO.setmode(GPIO.BOARD)
 
-    # Set up button pin as an input, pulled down to ground
-    # This means the pin is LOW (0) by default. When the button is pressed,
-    # it connects to 3.3V and reads HIGH (1).
-    GPIO.setup(button_pin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+# 将 LED_PIN 设置为输出模式
+GPIO.setup(LED_PIN, GPIO.OUT)
 
-    print("Button ready. Press it! (Ctrl+C to exit)")
+print(f"start.")
 
-    try:
-        while True:
-            if GPIO.input(button_pin) == GPIO.HIGH:
-                print("Button Pressed!")
-            else:
-                print("Button Not Pressed")
-            
-            time.sleep(0.1) # Debounce and prevent spamming the console
+try:
+    while True:
+        print("LED ON")
+        GPIO.output(LED_PIN, GPIO.HIGH)
+        time.sleep(1)
 
-    finally:
-        print("\nCleaning up GPIO...")
-        GPIO.cleanup()
+        print("LED OFF")
+        GPIO.output(LED_PIN, GPIO.LOW)
+        time.sleep(1)
 
-if __name__ == '__main__':
-    main()
+except KeyboardInterrupt:
+    print("Broken.")
+
+finally:
+    print("Clean...")
+    GPIO.cleanup()
+    print("Done")
 ```
 
 ### 3. Run the Code
