@@ -81,36 +81,31 @@ Create a new file named `blink.py` and enter the following code:
 import Hobot.GPIO as GPIO
 import time
 
-# Pin Definitions
-led_pin = 31  # BOARD pin 31
+LED_PIN = 31
 
-def main():
-    # Set the GPIO numbering mode
-    GPIO.setmode(GPIO.BOARD)
+GPIO.setmode(GPIO.BOARD)
 
-    # Set up the LED pin as an output
-    GPIO.setup(led_pin, GPIO.OUT)
+GPIO.setup(LED_PIN, GPIO.OUT)
 
-    print("Starting LED blink. Press Ctrl+C to exit.")
+print(f"Start")
 
-    try:
-        # Loop forever
-        while True:
-            print("LED ON")
-            GPIO.output(led_pin, GPIO.HIGH)  # Turn the LED on (HIGH is the voltage level)
-            time.sleep(1)                    # Wait for 1 second
+try:
+    while True:
+        print("LED ON")
+        GPIO.output(LED_PIN, GPIO.HIGH)
+        time.sleep(1)
 
-            print("LED OFF")
-            GPIO.output(led_pin, GPIO.LOW)   # Turn the LED off (LOW is the voltage level)
-            time.sleep(1)                    # Wait for 1 second
+        print("LED OFF")
+        GPIO.output(LED_PIN, GPIO.LOW)
+        time.sleep(1)
 
-    finally:
-        # This block will run when the program is interrupted (e.g., Ctrl+C)
-        print("\nCleaning up GPIO...")
-        GPIO.cleanup()  # Resets all GPIO ports you've used back to input mode.
+except KeyboardInterrupt:
+    print("Broken")
 
-if __name__ == '__main__':
-    main()
+finally:
+    print("Cleanning...")
+    GPIO.cleanup()
+    print("Done")
 ```
 
 ### 3. Run the Code
@@ -160,40 +155,35 @@ For reference, please check [button.png](./media/button.png)
 Create a new file named `button_read.py` and enter the following code:
 
 ```python
-# 导入必要的库
 import Hobot.GPIO as GPIO
 import time
 
-# --- 引脚定义 ---
-# 我们使用物理引脚编号，所以这里的数字就是我们实际连接的引脚号。
-LED_PIN = 31
+BUTTON_PIN = 13
 
-# --- GPIO 初始化 ---
-# 设置引脚编号模式为 BOARD 模式，即使用物理引脚号。
 GPIO.setmode(GPIO.BOARD)
 
-# 将 LED_PIN 设置为输出模式
-GPIO.setup(LED_PIN, GPIO.OUT)
+GPIO.setup(BUTTON_PIN, GPIO.IN)
 
-print(f"start.")
+print(f"start")
 
 try:
     while True:
-        print("LED ON")
-        GPIO.output(LED_PIN, GPIO.HIGH)
-        time.sleep(1)
+        button_state = GPIO.input(BUTTON_PIN)
 
-        print("LED OFF")
-        GPIO.output(LED_PIN, GPIO.LOW)
-        time.sleep(1)
+        if button_state == GPIO.HIGH:
+            print("Pressed! (Button Pressed)")
+        else:
+            print("No movement (Button Not Pressed)")
+
+        time.sleep(0.1)
 
 except KeyboardInterrupt:
-    print("Broken.")
+    print("\Broken")
 
 finally:
     print("Clean...")
     GPIO.cleanup()
-    print("Done")
+    print("DOne")
 ```
 
 ### 3. Run the Code
