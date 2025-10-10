@@ -23,6 +23,13 @@ You can reference the pins in two ways:
 
 ![alt text](https://rdk-doc.oss-cn-beijing.aliyuncs.com/doc/img/03_Basic_Application/03_40pin_user_guide/image/40pin_user_guide/image-20241217-202319.png)
 
+**Official Sample Codes**
+
+On your RDK, run the following code to check their official sample code based on `GPIO` development, and vision projects:
+```bash
+bash cd /app/
+```
+
 ### Prepare Your Workspace
 1.  Connect your RDK X-5 and log in.
 2.  Open a terminal and a text editor (like `gedit`, `nano`, or `VS Code`).
