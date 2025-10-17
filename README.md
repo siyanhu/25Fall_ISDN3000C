@@ -38,7 +38,7 @@
     ├── tutorial.md
     ```
     
-5. [**Session 6: Introduction to GPIO on RDK X-5 with Python**](Lab06)
+6. [**Session 6: Introduction to GPIO on RDK X-5 with Python**](Lab06)
     ```
     Lab06 /
     ├── tutorial.md
@@ -46,4 +46,10 @@
     ├──── blink.png
     ├──── button.png
     ├──── combine.png
+    ```
+
+7. [**Lab 7: White Box AI**](Lab07)
+    ```
+    Lab06 /
+    ├── tutorial.md
     ```
